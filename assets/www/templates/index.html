@@ -1,0 +1,18 @@
+<div class="main">
+    {{title}}
+   <p>
+       <p><button data-event="bluetooth.actions" class="enableBT">Enable</button></p>
+       <p><button data-event="bluetooth.actions" class="disableBT">Disable</button></p>
+       <p><button data-event="bluetooth.actions" class="findDevices">Discover</button></p>
+       <p><select id='bt-devices-select'></select></p>
+       <p><button data-event="bluetooth.actions" id='bt-pair' class="listUUIDs">List UUIDs</button></p>
+   </p>
+   <p>
+        <p><select id='bt-device-uuids'></select></p>
+        <p><button data-event="bluetooth.actions" id='bt-connect' class="openRfcomm">Connect</button></p>
+        <p><button data-event="bluetooth.actions" class="readRfcomm">Read</button></p>
+        <p><div id='bt-data-dump'></div></p>
+   </p>
+   <div id="log"></div>
+</div>
+
